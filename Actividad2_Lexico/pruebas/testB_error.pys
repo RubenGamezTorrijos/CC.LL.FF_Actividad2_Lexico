@@ -1,0 +1,3 @@
+# Fichero de prueba con error léxico
+x = 10
+y = @20

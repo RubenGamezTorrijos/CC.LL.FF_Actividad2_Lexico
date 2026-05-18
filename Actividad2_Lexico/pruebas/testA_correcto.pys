@@ -1,0 +1,22 @@
+# Fichero de prueba correcto de mini-lenguaje (Python-like)
+# Contiene asignaciones, expresiones aritméticas, estructuras de control, funciones y cadenas.
+
+def calcular_suma(a, b):
+    resultado := a + b
+    return resultado
+
+x = 10
+y = 20
+mensaje = "El resultado de la operacion es:"
+
+if x <= y:
+    print(mensaje)
+    res = calcular_suma(x, y)
+    print(res)
+else:
+    print("x es mayor que y")
+
+contador = 0
+while contador < 5:
+    contador = contador + 1
+    print(contador)

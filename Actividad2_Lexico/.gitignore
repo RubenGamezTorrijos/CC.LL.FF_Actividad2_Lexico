@@ -1,0 +1,23 @@
+# Flex/Lex generados
+lex.yy.c
+lex.yy.*
+src/analizador
+src/analizador.exe
+
+# Objetos compilación
+*.o
+*.a
+*.so
+
+# Entornos virtuales / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Outputs de pruebas (se regeneran)
+pruebas/*.out
