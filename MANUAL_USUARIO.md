@@ -29,7 +29,7 @@ sudo apt install -y flex gcc build-essential
 ## 2. Estructura de Carpetas del Proyecto
 
 ```
-Actividad2_Lexico/
+.
 ├── src/                          # Código fuente
 │   ├── analizador.l              # Especificación del analizador en Flex
 │   └── main.c                    # Punto de entrada en C (función main)
@@ -42,7 +42,10 @@ Actividad2_Lexico/
 │   ├── build_wsl.sh              # Script de compilación para WSL2/Linux
 │   ├── run_tests_wsl.sh          # Validador de pruebas para WSL2/Linux
 │   ├── build_windows.bat         # Script de compilación híbrido para Windows
-│   └── run_tests_windows.bat     # Validador de pruebas híbrido para Windows
+│   ├── run_tests_windows.bat     # Validador de pruebas híbrido para Windows
+│   ├── init_git.sh               # Script de inicialización de Git para WSL/Linux
+│   └── init_git.bat              # Script de inicialización de Git para Windows
+├── .gitignore                    # Archivo de exclusiones de Git
 ├── DOC_EXPPLICACION_PARTES.md    # Explicación teórica y técnica del analizador
 ├── MANUAL_USUARIO.md             # Este manual de usuario
 └── COMENTARIOS_CONCLUSIONES.md   # Conclusiones del desarrollo académico
