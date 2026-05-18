@@ -1,8 +1,6 @@
-
-
 @echo off
 rem Script de compilacion inteligente para Windows (CMD/PowerShell)
-rem Desarrollado por Antigravity (Versión ASCII segura)
+rem Desarrollado por Antigravity (Version ASCII segura)
 
 setlocal enabledelayedexpansion
 

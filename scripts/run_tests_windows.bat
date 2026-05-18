@@ -1,8 +1,6 @@
-
-
 @echo off
 rem Script de ejecucion de pruebas en Windows con soporte de fallback inteligente a WSL2
-rem Desarrollado por Antigravity (Versión ASCII segura)
+rem Desarrollado por Antigravity (Version ASCII segura)
 
 setlocal enabledelayedexpansion
 
@@ -89,7 +87,7 @@ for %%F in ("%PRUEBAS_DIR%\test*.pys") do (
 
 echo =========================================================
 if !ALL_PASSED! equ 1 (
-    echo [EXITO] ¡TODAS LAS PRUEBAS NATIVAS HAN PASADO CON EXITO (PASS)!
+    echo [EXITO] TODAS LAS PRUEBAS NATIVAS HAN PASADO CON EXITO (PASS)
     exit /b 0
 ) else (
     echo [ADVERTENCIA] Se han encontrado fallos en los tests. Revisa la salida de consola.
