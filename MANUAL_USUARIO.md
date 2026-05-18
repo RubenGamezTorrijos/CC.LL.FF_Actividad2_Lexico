@@ -46,7 +46,7 @@ sudo apt install -y flex gcc build-essential
 │   ├── init_git.sh               # Script de inicialización de Git para WSL/Linux
 │   └── init_git.bat              # Script de inicialización de Git para Windows
 ├── .gitignore                    # Archivo de exclusiones de Git
-├── DOC_EXPPLICACION_PARTES.md    # Explicación teórica y técnica del analizador
+├── DOC_EXPLICACION_PARTES.md    # Explicación teórica y técnica del analizador
 ├── MANUAL_USUARIO.md             # Este manual de usuario
 └── COMENTARIOS_CONCLUSIONES.md   # Conclusiones del desarrollo académico
 ```

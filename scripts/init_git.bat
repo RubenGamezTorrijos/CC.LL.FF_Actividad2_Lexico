@@ -34,7 +34,7 @@ if errorlevel 1 (
 
 echo 📋 Siguientes pasos manuales:
 echo   1. git add .
-echo   2. git commit -m "feat: entrega actividad 2 - analizador léxico con Flex"
+echo   2. git commit -m "Actividad 2 - analizador léxico con Flex"
 echo   3. Crear repo en GitHub y copiar URL
 echo   4. git remote add origin ^<URL^>
 echo   5. git push -u origin main

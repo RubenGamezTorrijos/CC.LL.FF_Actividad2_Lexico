@@ -43,7 +43,7 @@ El repositorio está organizado directamente en el directorio raíz con la sigui
 │   ├── init_git.sh               # Inicializador de repositorio Git para Linux/WSL
 │   └── init_git.bat              # Inicializador de repositorio Git para Windows
 ├── .gitignore                    # Archivo de exclusiones de archivos generados y temporales
-├── DOC_EXPPLICACION_PARTES.md    # Explicación técnica y teórica detallada sobre Flex
+├── DOC_EXPLICACION_PARTES.md    # Explicación técnica y teórica detallada sobre Flex
 ├── MANUAL_USUARIO.md             # Guía paso a paso de uso, instalación y comandos
 ├── COMENTARIOS_CONCLUSIONES.md   # Conclusiones académicas, retos técnicos y áreas de mejora
 └── README.md                     # Documentación principal del proyecto (este archivo)

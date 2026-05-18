@@ -18,38 +18,38 @@ COMENTARIO  #[^\n]*
 %%
 
     /* 1. Operadores Compuestos (Precedencia alta para evitar falsos positivos con operadores simples) */
-":="        { printf("OP_WALRUS\t%s\t%d\n", yytext, linea); }
-"<="        { printf("OP_MENOR_IGUAL\t%s\t%d\n", yytext, linea); }
-">="        { printf("OP_MAYOR_IGUAL\t%s\t%d\n", yytext, linea); }
-"=="        { printf("OP_IGUALDAD\t%s\t%d\n", yytext, linea); }
-"!="        { printf("OP_DIFERENTE\t%s\t%d\n", yytext, linea); }
+":="        { printf("WALRUS %s %d\n", yytext, linea); }
+"<="        { printf("MENOR_IGUAL %s %d\n", yytext, linea); }
+">="        { printf("MAYOR_IGUAL %s %d\n", yytext, linea); }
+"=="        { printf("IGUALDAD %s %d\n", yytext, linea); }
+"!="        { printf("DIFERENTE %s %d\n", yytext, linea); }
 
     /* 2. Palabras Reservadas (Deben aparecer antes de la regla general de IDENTIFICADOR) */
-"def"       { printf("PR_DEF\t%s\t%d\n", yytext, linea); }
-"return"    { printf("PR_RETURN\t%s\t%d\n", yytext, linea); }
-"if"        { printf("PR_IF\t%s\t%d\n", yytext, linea); }
-"else"      { printf("PR_ELSE\t%s\t%d\n", yytext, linea); }
-"while"     { printf("PR_WHILE\t%s\t%d\n", yytext, linea); }
-"print"     { printf("PR_PRINT\t%s\t%d\n", yytext, linea); }
+"def"       { printf("DEF %s %d\n", yytext, linea); }
+"return"    { printf("RETURN %s %d\n", yytext, linea); }
+"if"        { printf("IF %s %d\n", yytext, linea); }
+"else"      { printf("ELSE %s %d\n", yytext, linea); }
+"while"     { printf("WHILE %s %d\n", yytext, linea); }
+"print"     { printf("PRINT %s %d\n", yytext, linea); }
 
     /* 3. Operadores Simples y Signos de Puntuación */
-"<"         { printf("OP_MENOR\t%s\t%d\n", yytext, linea); }
-">"         { printf("OP_MAYOR\t%s\t%d\n", yytext, linea); }
-":"         { printf("SIGNO_DOS_PUNTOS\t%s\t%d\n", yytext, linea); }
-"="         { printf("OP_ASIGNACION\t%s\t%d\n", yytext, linea); }
-"+"         { printf("OP_SUMA\t%s\t%d\n", yytext, linea); }
-"-"         { printf("OP_RESTA\t%s\t%d\n", yytext, linea); }
-"*"         { printf("OP_MULTIPLICACION\t%s\t%d\n", yytext, linea); }
-"/"         { printf("OP_DIVISION\t%s\t%d\n", yytext, linea); }
-"%"         { printf("OP_MODULO\t%s\t%d\n", yytext, linea); }
-"("         { printf("PARENTESIS_ABRIR\t%s\t%d\n", yytext, linea); }
-")"         { printf("PARENTESIS_CERRAR\t%s\t%d\n", yytext, linea); }
-","         { printf("SIGNO_COMA\t%s\t%d\n", yytext, linea); }
+"<"         { printf("MENOR %s %d\n", yytext, linea); }
+">"         { printf("MAYOR %s %d\n", yytext, linea); }
+":"         { printf("DOS_PUNTOS %s %d\n", yytext, linea); }
+"="         { printf("ASIGNACION %s %d\n", yytext, linea); }
+"+"         { printf("SUMA %s %d\n", yytext, linea); }
+"-"         { printf("RESTA %s %d\n", yytext, linea); }
+"*"         { printf("MULTIPLICACION %s %d\n", yytext, linea); }
+"/"         { printf("DIVISION %s %d\n", yytext, linea); }
+"%"         { printf("MODULO %s %d\n", yytext, linea); }
+"("         { printf("PAR_IZQ %s %d\n", yytext, linea); }
+")"         { printf("PAR_DER %s %d\n", yytext, linea); }
+","         { printf("COMA %s %d\n", yytext, linea); }
 
     /* 4. Elementos definidos por Macros */
-{IDENT}     { printf("IDENTIFICADOR\t%s\t%d\n", yytext, linea); }
-{NUM}       { printf("NUMERO\t%s\t%d\n", yytext, linea); }
-{CADENA}    { printf("CADENA\t%s\t%d\n", yytext, linea); }
+{IDENT}     { printf("ID %s %d\n", yytext, linea); }
+{NUM}       { printf("ENTERO %s %d\n", yytext, linea); }
+{CADENA}    { printf("CADENA %s %d\n", yytext, linea); }
 
     /* 5. Elementos a ignorar o procesar */
 {ESPACIOS}  { /* Ignorar espacios y tabuladores */ }

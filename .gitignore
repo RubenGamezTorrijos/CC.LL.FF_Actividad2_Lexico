@@ -21,3 +21,9 @@ Thumbs.db
 
 # Outputs de pruebas (se regeneran)
 pruebas/*.out
+
+# Archivos de instalación y empaquetados temporales
+InstallationLog.txt
+*.zip
+*.rar
+
